@@ -12,4 +12,5 @@ HOW TO RUN:
 
 1. Run Server. (Server running on port 8000)
 2. Run Client. (Client should run on port 5173)
-3. Click the button "Connect a bank account"
+3. Click the button "Connect a bank account" and follow the steps.
+4. Acceess Token and Auth details would be printed in Console.
