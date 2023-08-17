@@ -17,7 +17,7 @@ function PlaidAuth({publicToken}) {
     async function fetchData() {
       const accessToken = await axios.post("/api/exchange_public_token", {public_token: publicToken});
       console.log("ACCESS TOKEN", accessToken.data)
-      const auth = await axios.post('/api/auth', { access_token: accessToken.data.accessToken})
+      const auth = await axios.post('/api/auth/get', { access_token: accessToken.data.accessToken})
       console.log("Auth Data", auth.data)
     }
     fetchData();

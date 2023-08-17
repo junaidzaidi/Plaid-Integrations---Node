@@ -71,7 +71,7 @@ app.post('/api/exchange_public_token', async function (
     }
   });
 
-app.post('/api/auth', async function (request, response) {
+app.post('/api/auth/get', async function (request, response) {
     try {
         const accessToken = request.body.access_token
         const plaidRequest = {
